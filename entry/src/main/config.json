@@ -1,0 +1,58 @@
+{
+  "app": {
+    "bundleName": "com.example.splashscreenability",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.splashscreenability",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.splashscreenability.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "portrait",
+        "name": "com.example.splashscreenability.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:splashscreenability_description",
+        "configChanges": [
+          "orientation"
+        ],
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "portrait",
+        "name": "com.example.splashscreenability.SplashScreenAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
